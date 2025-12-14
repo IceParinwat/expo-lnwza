@@ -5,7 +5,10 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Link href="/health" style={styles.link}>
-        <Text style={styles.linkText}>(Health)</Text>
+        <Text style={styles.linkText}>Health</Text>
+      </Link>
+      <Link href="/home" style={styles.link}>
+        <Text style={styles.linkText}>Home</Text>
       </Link>
     </View>
   );
@@ -16,6 +19,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    gap: 15,
   },
   link: {
     padding: 20,
